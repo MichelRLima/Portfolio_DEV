@@ -36,8 +36,8 @@
     width: 43%;
     color: white;
     margin-top: 0.5em;
-    margin-right: 3.5em;
-    margin-left: 1em;
+    margin-left: 4em;
+    margin-right: 1em;
 
 
 }
@@ -53,6 +53,7 @@
     margin-bottom: 3em;
     border-radius: 0 10em 10em 0;
     margin-right: auto;
+    overflow: hidden
 }
 
 .perfil {
@@ -288,11 +289,28 @@
 
 @media screen and (max-width:560px) {
 
+    .containerDescricao {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .descricao1 {
+        width: 90%;
+        margin: 1em auto;
+    }
+
+
+    .descricao2 {
+        width: 90%;
+        margin: 1em auto;
+    }
+
 
     .perfil {
         position: absolute;
-        top: 3.3em;
-        left: 40%;
+        top: 3.38em;
+        left: 37%;
         background-image: url('../../imageLogo/perfil.png');
         width: 9em;
         height: 16em;
@@ -331,10 +349,38 @@
 
     .git {
 
-        left: 7%;
+        left: 66%;
         top: 6em;
 
+
     }
+
+    .jquery {
+
+        left: 19%;
+
+
+    }
+
+    .python {
+
+        left: 30%;
+        top: 9em;
+
+    }
+
+
+
+
+    .containerPerfil {
+
+        width: 100%;
+
+
+    }
+
+
+
 
 
 }
