@@ -18,7 +18,7 @@ function PageHeader() {
             <div className={styles.containerBar}>
                 <ul>
                     <li><Link to="PageBody" smooth={true} duration={500} offset={-75}>Início</Link></li>
-                    <li><Link to="about" smooth={true} duration={500}>Sobre</Link></li>
+                    <li><Link to="about" smooth={true} duration={500} offset={-120}>Sobre</Link></li>
                     <li><Link to="projects" smooth={true} duration={500}>Projetos</Link></li>
                     <li><Link to="contact" smooth={true} duration={500}>Contato</Link></li>
                 </ul>

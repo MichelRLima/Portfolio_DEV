@@ -1,3 +1,85 @@
-.projects {
-    color: blue;
+.PageProjects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2em;
+
+}
+
+.tituloProjects {
+    color: white;
+    font-family: 'Anton', sans-serif;
+}
+
+
+.react {
+    color: #44bad5;
+    background-color: transparent;
+    width: 2em;
+    height: 2em;
+    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    /* Para navegadores baseados em WebKit (por exemplo, Chrome e Safari) */
+    -moz-transform: rotate(15deg);
+    /* Para navegadores Firefox (Mozilla) */
+    animation: rotate 4s linear infinite;
+    /* Define a animação chamada 'rotate' */
+}
+
+.nodejs {
+
+    color: #21a266;
+    background-color: transparent;
+    width: 2em;
+    height: 2em;
+
+}
+
+.aws {
+
+    color: #efefef;
+    background-color: transparent;
+    width: 2em;
+    height: 2em;
+
+}
+
+.mongoDB {
+
+    color: #4a9d4b;
+    background-color: transparent;
+    width: 2em;
+    height: 2em;
+
+}
+
+.css {
+
+    color: #306af1;
+    background-color: transparent;
+    width: 2em;
+    height: 2em;
+
+
+}
+
+
+
+
+
+
+
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+        /* Começa a rotação a partir de 0 graus */
+    }
+
+    100% {
+        transform: rotate(360deg);
+        /* Completa uma rotação completa (360 graus) */
+    }
 }
