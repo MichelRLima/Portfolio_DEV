@@ -4,3 +4,8 @@
   box-sizing: border-box;
   background-color: #0a0a0a;
 }
+
+.App {
+  max-width: 120em;
+  margin: 0 auto;
+}

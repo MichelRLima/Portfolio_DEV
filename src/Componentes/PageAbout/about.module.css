@@ -1,0 +1,47 @@
+.about {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Anton', sans-serif;
+    color: white;
+}
+
+.containerDescricao {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+
+.descricaoleft,
+.descricaoright {
+    width: 43%;
+    text-indent: 1em;
+    max-width: 40em;
+}
+
+.descricao {
+    padding: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: justify;
+    width: 100%;
+
+}
+
+@media screen and (max-width: 560px) {
+
+    .containerDescricao {
+        flex-direction: column;
+    }
+
+    .descricaoleft,
+    .descricaoright {
+        width: 100%;
+        padding: 0 1em;
+    }
+
+}

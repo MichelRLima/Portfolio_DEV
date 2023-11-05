@@ -16,14 +16,15 @@
 
     cursor: pointer;
     width: 7.5em;
-    height: 3.4em;
-    background-color: #0a0a0a;
+    height: 2.4em;
+    background-color: #ffffff;
     margin-left: 6em;
     background-image: url("../../imageLogo/logo4.PNG");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
-    border-radius: 0 2em 2em 0;
+    border-radius: 0 10em 10em 0;
+    margin-bottom: 1em;
 }
 
 .containerBar {

@@ -12,6 +12,9 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-indent: 1em;
 }
 
 .titulo {
@@ -20,25 +23,29 @@
     font-size: 11vw;
     padding: 0.1em;
 
+
 }
 
 .descricao1 {
     width: 43%;
+    max-width: 40em;
     color: white;
     margin-top: 0.5em;
     margin-left: 4em;
     margin-right: 1em;
+    text-align: justify;
 
 }
 
 .descricao2 {
 
     width: 43%;
+    max-width: 40em;
     color: white;
     margin-top: 0.5em;
-    margin-left: 4em;
-    margin-right: 1em;
-
+    margin-left: 1em;
+    margin-right: 4em;
+    text-align: justify;
 
 }
 
@@ -383,6 +390,13 @@
 
 
 
+}
+
+@media screen and (min-width: 1250px) {
+    .titulo {
+        color: red;
+        font-size: 9em;
+    }
 }
 
 

@@ -8,17 +8,17 @@ function PageBody() {
 
     return (
         <>
-            <div className={styles.containerBody}>
+            <div id="PageBody" className={styles.containerBody}>
                 <h1 className={styles.titulo}>DESENVOLVEDOR WEB</h1>
                 <div className={styles.containerDescricao}>
                     <div className={styles.descricao1}>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus, orci in ornare luctus, erat ligula imperdiet mi, sit amet porttitor tortor nisl at nunc. Etiam blandit, lorem et pulvinar maximus, erat orci volutpat quam, ut pretium diam risus at felis. Ut luctus dui mauris, at mollis nisl posuere vitae.
+                            Atualmente, sou um estudante de Análise e Desenvolvimento de Sistemas, e estou dedicando meu tempo para aprimorar minhas habilidades, com o objetivo de realizar o sonho de me tornar um desenvolvedor web. Cada dia é uma oportunidade de aprendizado e crescimento nessa jornada.
                         </p>
                     </div>
                     <div className={styles.descricao2}>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus, orci in ornare luctus, erat ligula imperdiet mi, sit amet porttitor tortor nisl at nunc. Etiam blandit, lorem et pulvinar maximus, erat orci volutpat quam, ut pretium diam risus at felis. Ut luctus dui mauris, at mollis nisl posuere vitae.
+                            Tenho trabalhado em projetos fullstack, utilizando React e Node.js, onde me dediquei à criação de APIs e à hospedagem na AWS. Neste momento, estou em busca da minha primeira oportunidade como desenvolvedor.
                         </p>
                     </div>
                 </div>
