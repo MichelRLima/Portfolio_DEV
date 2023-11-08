@@ -4,7 +4,7 @@
     width: 90%;
     border-radius: 2em;
     margin: 0 5em;
-    margin: 1em 0;
+    margin: 1em auto;
     transition: border 0.9s;
     /* Adicione a transição para a propriedade 'border' */
 }
@@ -102,6 +102,13 @@
 
     .containerImage {
         width: 100%;
+
+        border-bottom-right-radius: 2em;
+    }
+
+    .image {
+        width: 80vw;
+        height: 50vw;
     }
 
     .technologies {

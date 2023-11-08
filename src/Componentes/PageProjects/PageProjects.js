@@ -16,11 +16,14 @@ import notas from '../../imageProjects/Notas.PNG'
 import { FaReact, FaNodeJs, FaAws, FaBootstrap } from 'react-icons/fa'
 import { SiCss3, SiMongodb, SiSocketdotio, SiJavascript } from 'react-icons/si'
 import { AiFillHtml5 } from 'react-icons/ai'
+
 function PageProjects() {
+
 
     return (
         <div id="projects" className={styles.PageProjects}>
             <h1 className={styles.tituloProjects}>Meus projetos</h1>
+
 
             <Project
                 image={myfeira}
@@ -66,7 +69,7 @@ function PageProjects() {
 
             <Project
                 image={cointoreal}
-                titulo={"Conversor de Moedas"}
+                titulo={"Coin To Real"}
                 descricao={'O projeto é uma aplicação web chamada "Coin to Real" que permite aos usuários converter diferentes moedas estrangeiras para a moeda brasileira, o Real. A aplicação foi desenvolvida em React e utiliza várias bibliotecas e recursos para fornecer informações de câmbio em tempo real.'}
                 technologies={[
                     <FaReact className={styles.react}></FaReact>,
@@ -77,7 +80,7 @@ function PageProjects() {
 
             <Project
                 image={notas}
-                titulo={"Notas Service Desk"}
+                titulo={"Notas"}
                 descricao={'Com o objetivo de aprimorar meu desempenho como analista de suporte, desenvolvi uma plataforma de notas que permite adicionar, modificar, excluir e pesquisar frases de forma mais eficiente. As frases são armazenadas localmente utilizando o LocalStorage. Este projeto visa otimizar a utilização de frases prontas, facilitando a cópia de uma frase completa com apenas um clique e tornando possível a pesquisa de frases mais extensas através de palavras-chave.'}
                 technologies={[
                     <FaReact className={styles.react}></FaReact>,

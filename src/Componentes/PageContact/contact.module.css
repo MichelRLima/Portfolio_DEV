@@ -1,3 +1,82 @@
-.contact {
-    color: green;
+.Contact {
+    margin-top: 5em;
+    height: 50em;
+
+    flex-direction: column;
+
+
+}
+
+.Titulo {
+    color: rgb(255, 255, 255);
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    position: relative;
+
+}
+
+.contatos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 9em;
+    margin-bottom: 2em;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1em;
+    width: 10.5em;
+    height: 8em;
+    margin: 1em 1em;
+    color: white;
+
+}
+
+.contato a {
+    color: white;
+
+}
+
+.linkedin {
+    color: rgb(18 107 196);
+    width: 5em;
+    height: 5em;
+    cursor: pointer;
+}
+
+.github {
+    color: rgb(255, 255, 255);
+    width: 5em;
+    cursor: pointer;
+    height: 5em;
+}
+
+.wpp {
+    color: #09bc41;
+    width: 5em;
+    height: 5em;
+    cursor: pointer;
+}
+
+.email {
+    color: #d65143;
+    width: 5em;
+    height: 5em;
+    cursor: pointer;
+}
+
+@media screen and (max-width:400px) {
+    .contatos {
+
+        margin-top: 0em;
+
+    }
+
 }
