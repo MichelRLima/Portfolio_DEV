@@ -15,6 +15,11 @@ function App() {
 
       <PageHeader></PageHeader>
       <PageBody></PageBody>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <About></About>
       <PageProjects></PageProjects>
       <Contact></Contact>

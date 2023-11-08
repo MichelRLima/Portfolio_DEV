@@ -12,6 +12,10 @@
 
 }
 
+.teste {
+    border-bottom: 2px solid white;
+}
+
 .containerLogo {
 
     cursor: pointer;
