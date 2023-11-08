@@ -10,6 +10,7 @@
 .tituloProjects {
     color: white;
     font-family: 'Anton', sans-serif;
+    margin-bottom: 1em;
 }
 
 
@@ -43,6 +44,39 @@
     width: 2em;
     height: 2em;
 
+}
+
+.html {
+    color: #f16a30;
+    background-color: transparent;
+    width: 2.3em;
+    height: 2.3em;
+    margin-top: -0.2em;
+
+}
+
+.js {
+    color: #f7e025;
+    background-color: transparent;
+    width: 2em;
+    height: 2em;
+
+
+}
+
+.socket {
+    color: #efefef;
+    background-color: transparent;
+    width: 2em;
+    height: 2em;
+}
+
+.boostrap {
+    color: rgb(120 24 247);
+    background-color: transparent;
+    width: 2.5em;
+    height: 2.5em;
+    margin-top: -0.3em;
 }
 
 .mongoDB {

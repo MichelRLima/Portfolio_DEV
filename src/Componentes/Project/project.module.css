@@ -1,9 +1,16 @@
 .Project {
+    border: 3px solid rgb(100, 100, 100);
     display: flex;
     width: 90%;
-    border: 3px solid white;
     border-radius: 2em;
     margin: 0 5em;
+    margin: 1em 0;
+    transition: border 0.9s;
+    /* Adicione a transição para a propriedade 'border' */
+}
+
+.Project:hover {
+    border: 3px solid white;
 }
 
 .containerImage {
@@ -27,7 +34,8 @@
     color: white;
     padding: 2em;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300
+    font-weight: 300;
+    text-align: justify;
 }
 
 .image {
@@ -80,4 +88,23 @@
 
 .technologie {
     margin: 0 0.3em;
+}
+
+@media screen and (max-width: 830px) {
+    .Project {
+        flex-direction: column-reverse;
+    }
+
+    .descricao {
+        width: 100%;
+        border-top-left-radius: 2em;
+    }
+
+    .containerImage {
+        width: 100%;
+    }
+
+    .technologies {
+        justify-content: center;
+    }
 }
