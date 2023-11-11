@@ -1,3 +1,4 @@
+
 import styles from './projects.module.css'
 import Project from '../Project/Project'
 import myfeira from '../../imageProjects/myfeira.PNG'
@@ -23,7 +24,6 @@ function PageProjects() {
     return (
         <div id="projects" className={styles.PageProjects}>
             <h1 className={styles.tituloProjects}>Meus projetos</h1>
-
 
             <Project
                 image={myfeira}
@@ -74,7 +74,7 @@ function PageProjects() {
                 technologies={[
                     <FaReact className={styles.react}></FaReact>,
                     <SiCss3 className={styles.css}></SiCss3>]}
-                linkProjeto={"http://ec2-52-14-95-83.us-east-2.compute.amazonaws.com:3001"}
+                linkProjeto={"https://coin-to-real.netlify.app"}
                 linkGitHub={"https://github.com/MichelRLima/Conversor-de-moedas"}
             ></Project>
 
