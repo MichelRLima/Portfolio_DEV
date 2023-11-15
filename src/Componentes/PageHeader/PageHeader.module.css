@@ -32,10 +32,12 @@
 }
 
 .containerBar {
-    width: 17em;
-    height: 1.8em;
-    margin-top: 2em;
-    margin-right: 6em;
+    display: flex;
+    width: 20em;
+    height: 6em;
+
+    margin-right: 1em;
+
 }
 
 .containerBar ul {
@@ -45,12 +47,13 @@
     background-color: #0a0a0a;
 }
 
-.containerBar li {
+.link {
     color: white;
     display: inline;
     cursor: pointer;
     margin-right: 20px;
     font-weight: 100;
+
 }
 
 .containerBar li:hover {
@@ -86,9 +89,36 @@
     padding: 0.3em;
 }
 
+.containerItensContato {
+    display: flex;
+    height: 1.5em;
+    width: 5em;
+    justify-content: space-between;
+}
+
+.linkedin {
+    color: rgb(18 107 196);
+    height: 1.5em;
+    width: 1.5em;
+    cursor: pointer;
+    margin-bottom: 5em;
+}
+
+.github {
+    color: rgb(255, 255, 255);
+    height: 1.5em;
+    width: 1.5em;
+    cursor: pointer;
+
+}
 
 
 @media screen and (max-width:600px) {
+
+    .containerItensContato {
+        display: none;
+    }
+
     .containerBar {
         display: none;
     }

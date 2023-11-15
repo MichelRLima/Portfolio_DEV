@@ -4,13 +4,22 @@ import styles from './about.module.css'
 
 function About() {
 
+    function obterDataAtual() {
+
+        const dataAtual = new Date();
+        const nascimento = new Date("1998-12-14")
+        const anos = Math.floor((dataAtual - nascimento) / 31536000000);
+        return anos;
+    }
+
+
 
     return (
         <div id="about" className={styles.about}>
-            <h1>Sobre</h1>
+            <h1>Sobre mim</h1>
             <div className={styles.containerDescricao}>
                 <div className={styles.descricaoleft}>
-                    <p className={styles.descricao}>Olá, sou Michel, um estudante de Análise e Desenvolvimento de Sistema que mora em Natal, no Rio Grande do Norte. Minha paixão pelo mundo da programação me levou a mergulhar profundamente no desenvolvimento backend, onde encontro os desafios mais empolgantes.</p>
+                    <p className={styles.descricao}>Olá, sou Michel, tenho {obterDataAtual()} anos e sou um estudante de Análise e Desenvolvimento de Sistema que mora em Natal, no Rio Grande do Norte. Minha paixão pelo mundo da programação me levou a mergulhar profundamente no desenvolvimento backend, onde encontro os desafios mais empolgantes.</p>
                     <p className={styles.descricao}>Trabalhar com uma variedade de linguagens, porém atualmente trabalho principal com React.js e Node.js, que me permitiu explorar a versatilidade da tecnologia. Meu projeto mais significativo até o momento é o WebApp My Feira, onde liderei o desenvolvimento do frontend com React e criei uma API no backend usando Node.js para se comunicar com o MongoDB. Adquiri até mesmo um domínio e hospedei a API na AWS.</p>
                 </div>
                 <div className={styles.descricaoright}>

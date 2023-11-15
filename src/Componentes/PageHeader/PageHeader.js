@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styles from './PageHeader.module.css';
 import { FaBars } from 'react-icons/fa';
 import { Link } from 'react-scroll';
-
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 function PageHeader() {
     const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
     const [activeLink, setActiveLink] = useState(null);
@@ -19,7 +19,7 @@ function PageHeader() {
             about: document.getElementById('about').offsetTop - 200,
             projects: document.getElementById('projects').offsetTop - 230,
             contact: document.getElementById('contact').offsetTop - 230,
-        };
+        }
         console.log()
 
         // Verifique qual link está ativo com base na posição de rolagem
@@ -43,8 +43,9 @@ function PageHeader() {
         <div className={styles.ContainerHeader}>
             <div className={styles.containerLogo}></div>
             <div className={styles.containerBar}>
+
                 <ul>
-                    <li>
+                    <li className={styles.link}>
                         <Link
                             to="PageBody"
                             smooth={true}
@@ -57,7 +58,7 @@ function PageHeader() {
                             Início
                         </Link>
                     </li>
-                    <li>
+                    <li className={styles.link}>
                         <Link
                             to="about"
                             smooth={true}
@@ -70,7 +71,7 @@ function PageHeader() {
                             Sobre
                         </Link>
                     </li>
-                    <li>
+                    <li className={styles.link}>
                         <Link
                             to="projects"
                             smooth={true}
@@ -83,7 +84,7 @@ function PageHeader() {
                             Projetos
                         </Link>
                     </li>
-                    <li>
+                    <li className={styles.link}>
                         <Link
                             to="contact"
                             smooth={true}
@@ -97,7 +98,13 @@ function PageHeader() {
                         </Link>
                     </li>
                 </ul>
+                <div className={styles.containerItensContato}>
+                    <a target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/michel-rocha-01b550210/'><FaLinkedin className={styles.linkedin} /></a>
+                    <a target='_blank' rel="noreferrer" href='https://github.com/MichelRLima'> <FaGithub className={styles.github} /> </a>
+                </div>
+
             </div>
+
             <FaBars className={styles.iconBars} onClick={toggleMobileMenu} />
             {isMobileMenuVisible && (
                 <div className={styles.menuMobile}>
