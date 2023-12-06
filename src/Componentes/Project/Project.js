@@ -1,5 +1,6 @@
 import styles from './project.module.css'
 import { AiFillEye, AiFillGithub } from 'react-icons/ai'
+import { SiSwagger } from "react-icons/si";
 
 function Project(props) {
 
@@ -8,12 +9,16 @@ function Project(props) {
             <div className={styles.containerImage}>
                 <img src={props.image} className={styles.image} alt="img" />
                 <div className={styles.icons}>
-                    <a rel="noreferrer" target='_blank' href={props.linkProjeto}>
+                    <a style={{ display: props.linkProjeto === "" && 'none' }} rel="noreferrer" target='_blank' href={props.linkProjeto}>
                         <AiFillEye href={props.linkProjeto} className={styles.see}></AiFillEye>
                     </a>
 
-                    <a rel="noreferrer" target='_blank' href={props.linkGitHub}>
+                    <a style={{ display: props.linkGitHub === "" && 'none' }} rel="noreferrer" target='_blank' href={props.linkGitHub}>
                         <AiFillGithub className={styles.github}></AiFillGithub>
+                    </a>
+
+                    <a style={{ display: props.linkSwagger === "" && 'none' }} rel="noreferrer" target='_blank' href={props.linkSwagger}>
+                        <SiSwagger className={styles.github}></SiSwagger>
                     </a>
 
 

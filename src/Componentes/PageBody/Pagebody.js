@@ -29,7 +29,7 @@ function PageBody() {
                     <SiCss3 className={styles.css}></SiCss3>
                     <BiLogoJavascript className={styles.js}></BiLogoJavascript>
                     <FaReact className={styles.react}></FaReact>
-                    <div className={styles.python}></div>
+
                     <FaNodeJs className={styles.nodejs}></FaNodeJs>
                     <SiMongodb className={styles.mongoDB}></SiMongodb>
                     <div className={styles.git}></div>

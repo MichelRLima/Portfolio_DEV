@@ -1,15 +1,46 @@
 import styles from './about.module.css'
-
-
+import React from 'react';
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
+import certificado1 from '../../imageCertificados/certificado1.jpg'
+import certificado2 from '../../imageCertificados/certificado2.PNG'
+import certificado3 from '../../imageCertificados/certificado3.PNG'
+import certificado4 from '../../imageCertificados/certificado4.PNG'
+import certificado5 from '../../imageCertificados/certificado5.PNG'
+import certificado6 from '../../imageCertificados/certificado6.PNG'
+import certificado7 from '../../imageCertificados/certificado7.PNG'
+import certificado8 from '../../imageCertificados/certificado8.PNG'
+import certificado9 from '../../imageCertificados/certificado9.PNG'
+import certificado10 from '../../imageCertificados/certificado10.PNG'
+import certificado11 from '../../imageCertificados/certificado11.PNG'
+import certificado12 from '../../imageCertificados/certificado12.PNG'
 
 function About() {
 
+    const items = [
+        <div className={styles.containerCertificado} data-value="1"><a target='_blank' rel="noreferrer" href='https://drive.google.com/file/d/1mZz6bMdR1-GzMaY50sBjDkMWnNoOe09c/view?usp=sharing'><img alt='Certificado' className={styles.certificado} src={certificado1}></img></a></div>,
+        <div className={styles.containerCertificado} data-value="2"><a target='_blank' rel="noreferrer" href='https://drive.google.com/file/d/1XX4FB7p2Cxqx6W4tpcKCZLQPfCX401NO/view?usp=sharing'><img alt='Certificado' className={styles.certificado} src={certificado3}></img></a></div>,
+        <div className={styles.containerCertificado} data-value="3"><a target='_blank' rel="noreferrer" href='https://drive.google.com/file/d/1jNK-x8Fg4M7H3wEBahqDW20EkMVrzxGG/view?usp=sharing'><img alt='Certificado' className={styles.certificado} src={certificado2}></img></a></div>,
+        <div className={styles.containerCertificado} data-value="4"><a target='_blank' rel="noreferrer" href='https://drive.google.com/file/d/1-ndPnqZkeI5DNtU0bjdhCldk_6DszZIx/view?usp=sharing'><img alt='Certificado' className={styles.certificado} src={certificado4}></img></a></div>,
+        <div className={styles.containerCertificado} data-value="5"><a target='_blank' rel="noreferrer" href='https://drive.google.com/file/d/124BFgywIuBzDtDadTToo4v7ESMA8VwDW/view?usp=sharing'><img alt='Certificado' className={styles.certificado} src={certificado5}></img></a></div>,
+        <div className={styles.containerCertificado} data-value="6"><a target='_blank' rel="noreferrer" href='https://drive.google.com/file/d/1ouUzeSYmmr5ujU2ktodR-gGnGcLKftPX/view?usp=sharing'><img alt='Certificado' className={styles.certificado} src={certificado6}></img></a></div>,
+        <div className={styles.containerCertificado} data-value="7"><a target='_blank' rel="noreferrer" href='https://drive.google.com/file/d/1_ppEMxNPUoH1RZ5uanuEwCly4nDBfDg-/view?usp=sharing'><img alt='Certificado' className={styles.certificado} src={certificado7}></img></a></div>,
+        <div className={styles.containerCertificado} data-value="8"><a target='_blank' rel="noreferrer" href='https://drive.google.com/file/d/1QK4RujkrgVg8Q5dirR3mLFGXq4E-b-Ev/view?usp=sharing'><img alt='Certificado' className={styles.certificado} src={certificado8}></img></a></div>,
+        <div className={styles.containerCertificado} data-value="9"><a target='_blank' rel="noreferrer" href='https://drive.google.com/file/d/1j2WPJmNy3ElB4pBOvjKX2v9NzKLdrFT4/view?usp=sharing'><img alt='Certificado' className={styles.certificado} src={certificado9}></img></a></div>,
+        <div className={styles.containerCertificado} data-value="10"><a target='_blank' rel="noreferrer" href='https://drive.google.com/file/d/10zcrL-WJBPh9EndAFiyFQ54nzJBSzq0n/view?usp=sharing'><img alt='Certificado' className={styles.certificado} src={certificado10}></img></a></div>,
+        <div className={styles.containerCertificado} data-value="11"><a target='_blank' rel="noreferrer" href='https://drive.google.com/file/d/1WS6AnzM1_G4yLIl6rRzME36UbZXXWxdE/view?usp=sharing'><img alt='Certificado' className={styles.certificado} src={certificado11}></img></a></div>,
+        <div className={styles.containerCertificado} data-value="12"><a target='_blank' rel="noreferrer" href='https://drive.google.com/file/d/1WS6AnzM1_G4yLIl6rRzME36UbZXXWxdE/view?usp=sharing'><img alt='Certificado' className={styles.certificado} src={certificado12}></img></a></div>,
+    ];
+
     function obterDataAtual() {
+
 
         const dataAtual = new Date();
         const nascimento = new Date("1998-12-14")
         const anos = Math.floor((dataAtual - nascimento) / 31536000000);
         return anos;
+
+
     }
 
 
@@ -28,8 +59,20 @@ function About() {
                     <p className={styles.descricao}></p>
                 </div>
 
-
             </div>
+            <h4>Alguns certificados</h4>
+            <AliceCarousel
+                autoPlay
+                autoPlayStrategy="none"
+                autoPlayInterval={4000}
+                animationDuration={1000}
+                animationType="fadeout"
+                infinite
+                disableDotsControls
+                touchTracking={false}
+                items={items}
+            />
+
 
         </div>
     )

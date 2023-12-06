@@ -1,3 +1,4 @@
+import React from 'react';
 
 import styles from './projects.module.css'
 import Project from '../Project/Project'
@@ -14,8 +15,9 @@ import todolist from '../../imageProjects/todolist.JPG'
 import jogodavelha from '../../imageProjects/jogodavelha.JPG'
 import agencia from '../../imageProjects/agenciabold.JPG'
 import notas from '../../imageProjects/Notas.PNG'
+import ControleEstoque from '../../imageProjects/ControleEstoque.PNG'
 import { FaReact, FaNodeJs, FaAws, FaBootstrap } from 'react-icons/fa'
-import { SiCss3, SiMongodb, SiSocketdotio, SiJavascript } from 'react-icons/si'
+import { SiCss3, SiMongodb, SiSocketdotio, SiJavascript, SiPrisma, SiSwagger, SiPostgresql, SiTypescript } from 'react-icons/si'
 import { AiFillHtml5 } from 'react-icons/ai'
 
 function PageProjects() {
@@ -24,6 +26,23 @@ function PageProjects() {
     return (
         <div id="projects" className={styles.PageProjects}>
             <h1 className={styles.tituloProjects}>Meus projetos</h1>
+
+
+            <Project
+                image={ControleEstoque}
+                titulo={"API Controle de Estoque"}
+                descricao={"A API Controle de Estoque tem como objetivo oferecer controle completo para um negócio de vendas. É possível criar usuários, fazer login na plataforma, além de criar produtos e categorias, com todas as informações armazenadas no banco de dados PostgreSQL. Este projeto foi mais abrangente, pois utilizei o método de segurança JWT para o login de usuários e implementei criptografia para armazenar as senhas. Além disso, realizei a documentação da API utilizando o Swagger."}
+                technologies={[
+                    <FaNodeJs className={styles.nodejs}></FaNodeJs>,
+                    <SiTypescript className={styles.css}></SiTypescript  >,
+                    <SiPostgresql className={styles.css}></SiPostgresql >,
+                    <SiPrisma className={styles.aws}></SiPrisma >,
+                    <SiSwagger className={styles.swagger}></SiSwagger >
+                ]}
+                linkProjeto={""}
+                linkGitHub={"https://github.com/MichelRLima/API-Controle-de-Estoque"}
+                linkSwagger={"https://api-controle-estoque.onrender.com/api-docs/"}
+            ></Project>
 
             <Project
                 image={myfeira}
@@ -51,6 +70,7 @@ function PageProjects() {
                     <FaAws className={styles.aws}></FaAws>]}
                 linkProjeto={"http://ec2-52-14-95-83.us-east-2.compute.amazonaws.com:3000"}
                 linkGitHub={"https://github.com/MichelRLima/portal-de-noticia"}
+                linkSwagger={""}
             ></Project>
 
             <Project
@@ -65,6 +85,7 @@ function PageProjects() {
                     <FaAws className={styles.aws}></FaAws>]}
                 linkProjeto={"http://ec2-52-14-95-83.us-east-2.compute.amazonaws.com:3001"}
                 linkGitHub={"https://github.com/MichelRLima/ChatSocket"}
+                linkSwagger={""}
             ></Project>
 
             <Project
@@ -76,6 +97,7 @@ function PageProjects() {
                     <SiCss3 className={styles.css}></SiCss3>]}
                 linkProjeto={"https://coin-to-real.netlify.app"}
                 linkGitHub={"https://github.com/MichelRLima/Conversor-de-moedas"}
+                linkSwagger={""}
             ></Project>
 
             <Project
@@ -87,6 +109,7 @@ function PageProjects() {
                     <SiCss3 className={styles.css}></SiCss3>]}
                 linkProjeto={"https://notas-servicedesk.netlify.app"}
                 linkGitHub={"https://github.com/MichelRLima/Notas_Service-Desk"}
+                linkSwagger={""}
             ></Project>
 
             <Project
@@ -98,6 +121,7 @@ function PageProjects() {
                     <SiCss3 className={styles.css}></SiCss3>]}
                 linkProjeto={"https://mypokedex-go.netlify.app"}
                 linkGitHub={"https://github.com/MichelRLima/Pokedex"}
+                linkSwagger={""}
             ></Project>
 
             <Project
@@ -109,6 +133,7 @@ function PageProjects() {
                     <SiCss3 className={styles.css}></SiCss3>]}
                 linkProjeto={"https://sharegif.netlify.app"}
                 linkGitHub={"https://github.com/MichelRLima/BuscarGIF"}
+                linkSwagger={""}
             ></Project>
 
             <Project
@@ -120,6 +145,7 @@ function PageProjects() {
                     <SiCss3 className={styles.css}></SiCss3>]}
                 linkProjeto={"https://restaurante-hungrychef.netlify.app"}
                 linkGitHub={"https://github.com/MichelRLima/Cardapio"}
+                linkSwagger={""}
             ></Project>
 
             <Project
@@ -132,6 +158,7 @@ function PageProjects() {
                     <FaBootstrap className={styles.boostrap}></FaBootstrap>]}
                 linkProjeto={"https://mycalc-basic.netlify.app"}
                 linkGitHub={"https://github.com/MichelRLima/Calculadora"}
+                linkSwagger={""}
             ></Project>
             <Project
                 image={CEP}
@@ -143,6 +170,7 @@ function PageProjects() {
                     <FaBootstrap className={styles.boostrap}></FaBootstrap>]}
                 linkProjeto={"https://search-mycep.netlify.app"}
                 linkGitHub={"https://github.com/MichelRLima/BuscarCep"}
+                linkSwagger={""}
             ></Project>
             <Project
                 image={todolist}
@@ -154,6 +182,7 @@ function PageProjects() {
                     <FaBootstrap className={styles.boostrap}></FaBootstrap>]}
                 linkProjeto={"https://react-tasktodolist.netlify.app"}
                 linkGitHub={"https://github.com/MichelRLima/TodoList"}
+                linkSwagger={""}
             ></Project>
             <Project
                 image={jogodavelha}
@@ -165,6 +194,7 @@ function PageProjects() {
                     <SiJavascript className={styles.js}></SiJavascript>]}
                 linkProjeto={"https://game-jogodavelha.netlify.app"}
                 linkGitHub={"https://github.com/MichelRLima/Jogo-da-velha"}
+                linkSwagger={""}
             ></Project>
             <Project
                 image={agencia}
@@ -176,6 +206,7 @@ function PageProjects() {
                     <SiJavascript className={styles.js}></SiJavascript>]}
                 linkProjeto={"https://portfolio-agenciabold.netlify.app"}
                 linkGitHub={"https://github.com/MichelRLima/Agencia-bold"}
+                linkSwagger={""}
             ></Project>
         </div >
     )

@@ -60,7 +60,6 @@
     justify-content: center;
     width: 90%;
     cursor: pointer;
-
     margin-bottom: 1em;
 }
 
@@ -68,14 +67,14 @@
     color: white;
     width: 2em;
     height: 2em;
-    margin-right: 1em;
+    margin: 0 1em;
 }
 
 .icons .github {
     color: white;
     width: 2em;
     height: 2em;
-    margin-left: 1em;
+    margin: 0 1em;
 }
 
 .technologies {

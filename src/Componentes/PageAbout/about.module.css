@@ -32,6 +32,19 @@
 
 }
 
+.containerCertificado {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.certificado {
+    width: 30em;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 560px) {
 
     .containerDescricao {
@@ -43,5 +56,12 @@
         width: 100%;
         padding: 0 1em;
     }
+
+    .certificado {
+        width: 100%;
+        padding: 0 2em;
+    }
+
+
 
 }
