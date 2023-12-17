@@ -1,10 +1,12 @@
+import React from 'react';
 import styles from './PageBody.module.css'
 import { AiFillHtml5, AiOutlineConsoleSql } from 'react-icons/ai'
-import { SiCss3, SiMongodb, SiJquery, SiSocketdotio } from 'react-icons/si'
+import { SiCss3, SiMongodb, SiJquery, SiSocketdotio, SiPrisma, SiTypescript } from 'react-icons/si'
 import { BiLogoJavascript } from 'react-icons/bi'
 import { FaReact, FaNodeJs } from 'react-icons/fa'
-function PageBody() {
 
+
+function PageBody() {
 
     return (
         <>
@@ -29,7 +31,7 @@ function PageBody() {
                     <SiCss3 className={styles.css}></SiCss3>
                     <BiLogoJavascript className={styles.js}></BiLogoJavascript>
                     <FaReact className={styles.react}></FaReact>
-
+                    <SiPrisma className={styles.prisma}></SiPrisma>
                     <FaNodeJs className={styles.nodejs}></FaNodeJs>
                     <SiMongodb className={styles.mongoDB}></SiMongodb>
                     <div className={styles.git}></div>
@@ -37,6 +39,8 @@ function PageBody() {
                     <div className={styles.aws}></div>
                     <AiOutlineConsoleSql className={styles.sql}></AiOutlineConsoleSql>
                     <SiSocketdotio className={styles.socket}></SiSocketdotio>
+                    <SiTypescript className={styles.ts}></SiTypescript>
+
                 </div>
 
             </div>

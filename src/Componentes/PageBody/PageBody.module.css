@@ -108,6 +108,22 @@
 
 }
 
+.ts {
+    position: absolute;
+    color: #306af1;
+    background-color: transparent;
+    width: 2.5em;
+    height: 2.5em;
+    transform: rotate(-13deg);
+    -webkit-transform: rotate(-13deg);
+    /* Para navegadores baseados em WebKit (por exemplo, Chrome e Safari) */
+    -moz-transform: rotate(-13deg);
+    /* Para navegadores Firefox (Mozilla) */
+    left: 80%;
+    top: 2em;
+
+}
+
 .js {
     position: absolute;
     color: #f7e025;
@@ -140,8 +156,8 @@
     /* Define a animação chamada 'rotate' */
 }
 
-.python {
-    background-image: url('../../images/python.png');
+.prisma {
+
     position: absolute;
     background-color: transparent;
     width: 3em;
@@ -362,6 +378,13 @@
 
     }
 
+    .aws {
+
+        left: 60%;
+        top: 2em;
+
+    }
+
     .jquery {
 
         left: 19%;
@@ -369,14 +392,9 @@
 
     }
 
-    .python {
-
-        left: 30%;
-        top: 9em;
-
+    .ts {
+        top: 5em;
     }
-
-
 
 
     .containerPerfil {
