@@ -58,7 +58,7 @@ function PageProjects() {
                     <SiPrisma className={styles.aws}></SiPrisma >,
                     <SiSwagger className={styles.swagger}></SiSwagger >
                 ]}
-                linkProjeto={"https://myfeira.netlify.app"}
+                linkProjeto={"https://front-desafiotecnico.netlify.app"}
                 linkGitHub={"https://github.com/MichelRLima/Desafio-MichelRocha"}
                 linkSwagger={"https://desafio-backend-fd7h.onrender.com/api-docs/"}
             ></Project>
