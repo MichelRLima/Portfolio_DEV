@@ -17,6 +17,7 @@ import agencia from '../../imageProjects/agenciabold.JPG'
 import notas from '../../imageProjects/Notas.PNG'
 import ControleEstoque from '../../imageProjects/ControleEstoque.PNG'
 import HairTime from '../../imageProjects/hairtime.JPG'
+import desafioBimestre from '../../imageProjects/desafioBimestre.PNG'
 import { FaReact, FaNodeJs, FaAws, FaBootstrap } from 'react-icons/fa'
 import { SiCss3, SiMongodb, SiSocketdotio, SiJavascript, SiPrisma, SiSwagger, SiPostgresql, SiTypescript } from 'react-icons/si'
 import { AiFillHtml5 } from 'react-icons/ai'
@@ -43,6 +44,23 @@ function PageProjects() {
                 linkProjeto={""}
                 linkGitHub={"https://github.com/MichelRLima/API-Controle-de-Estoque"}
                 linkSwagger={"https://api-controle-estoque.onrender.com/api-docs/"}
+            ></Project>
+
+            <Project
+                image={desafioBimestre}
+                titulo={"Notas por bimestre"}
+                descricao={"Esse projeto foi concebido como um teste técnico para a posição de desenvolvedor júnior. O objetivo era criar uma plataforma utilizando React, capaz de incluir notas para quatro disciplinas por bimestre. Foi necessário desenvolver uma API com Node.js para armazenar os dados em um banco de dados, e tanto o frontend quanto o backend foram implementados com TypeScript. Além disso, elaborei a documentação da API. A plataforma permite a adição e exclusão de disciplinas, obedecendo a regras como a impossibilidade de adicionar a mesma disciplina no mesmo bimestre, e as notas estão restritas ao intervalo de 0 a 10."}
+                technologies={[
+                    <FaReact className={styles.react}></FaReact>,
+                    <SiTypescript className={styles.css}></SiTypescript  >,
+                    <FaNodeJs className={styles.nodejs}></FaNodeJs>,
+                    <SiPostgresql className={styles.css}></SiPostgresql >,
+                    <SiPrisma className={styles.aws}></SiPrisma >,
+                    <SiSwagger className={styles.swagger}></SiSwagger >
+                ]}
+                linkProjeto={"https://myfeira.netlify.app"}
+                linkGitHub={"https://github.com/MichelRLima/Desafio-MichelRocha"}
+                linkSwagger={"https://desafio-backend-fd7h.onrender.com/api-docs/"}
             ></Project>
 
             <Project

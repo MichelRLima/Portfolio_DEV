@@ -14,6 +14,7 @@ import certificado9 from '../../imageCertificados/certificado9.PNG'
 import certificado10 from '../../imageCertificados/certificado10.PNG'
 import certificado11 from '../../imageCertificados/certificado11.PNG'
 import certificado12 from '../../imageCertificados/certificado12.PNG'
+import certificado13 from '../../imageCertificados/certificado13.PNG'
 
 function About() {
 
@@ -30,6 +31,7 @@ function About() {
         <div className={styles.containerCertificado} data-value="10"><a target='_blank' rel="noreferrer" href='https://drive.google.com/file/d/10zcrL-WJBPh9EndAFiyFQ54nzJBSzq0n/view?usp=sharing'><img alt='Certificado' className={styles.certificado} src={certificado10}></img></a></div>,
         <div className={styles.containerCertificado} data-value="11"><a target='_blank' rel="noreferrer" href='https://drive.google.com/file/d/1WS6AnzM1_G4yLIl6rRzME36UbZXXWxdE/view?usp=sharing'><img alt='Certificado' className={styles.certificado} src={certificado11}></img></a></div>,
         <div className={styles.containerCertificado} data-value="12"><a target='_blank' rel="noreferrer" href='https://drive.google.com/file/d/1WS6AnzM1_G4yLIl6rRzME36UbZXXWxdE/view?usp=sharing'><img alt='Certificado' className={styles.certificado} src={certificado12}></img></a></div>,
+        <div className={styles.containerCertificado} data-value="13"><a target='_blank' rel="noreferrer" href='https://drive.google.com/file/d/1BMMzY77vs9It5-cqc-2gI87rKNu1MzCu/view?usp=sharing'><img alt='Certificado' className={styles.certificado} src={certificado13}></img></a></div>,
     ];
 
     function obterDataAtual() {
@@ -52,11 +54,13 @@ function About() {
                 <div className={styles.descricaoleft}>
                     <p className={styles.descricao}>Olá, sou Michel, tenho {obterDataAtual()} anos e sou um estudante de Análise e Desenvolvimento de Sistema que mora em Natal, no Rio Grande do Norte. Minha paixão pelo mundo da programação me levou a mergulhar profundamente no desenvolvimento backend, onde encontro os desafios mais empolgantes.</p>
                     <p className={styles.descricao}>Trabalho com uma variedade de linguagens, porém atualmente trabalho principal com React.js e Node.js, que me permitiu explorar a versatilidade da tecnologia. Meu projeto mais significativo até o momento é o WebApp My Feira, onde liderei o desenvolvimento do frontend com React e criei uma API no backend usando Node.js para se comunicar com o MongoDB. Adquiri até mesmo um domínio e hospedei a API na AWS.</p>
+                    <p className={styles.descricao}>Ao longo do meu percurso, adquiri uma sólida compreensão e habilidades em diversas áreas da programação e desenvolvimento de software. Iniciei minha jornada com um foco em React.js e TypeScript, explorando desde o básico até conceitos avançados, especialmente em integração com frameworks como Angular. Desenvolvi expertise na criação de APIs utilizando NodeJs, TypeScript, Express, Prisma, e implementei documentação eficiente usando Swagger.</p>
                 </div>
                 <div className={styles.descricaoright}>
+                    <p className={styles.descricao}> Na esfera de computação em nuvem, destaco minha exploração detalhada da AWS, fornecendo uma base sólida para projetos escaláveis. Ganhei experiência em modelagem unificada com UML e desenvolvi projetos práticos usando Git e GitHub para versionamento de código. No âmbito de banco de dados, adquiri conhecimento em MySQL e explorei tanto bancos de dados relacionais quanto NoSQL. Em inteligência artificial, certifiquei-me com sucesso no curso DescomplicA.I.</p>
                     <p className={styles.descricao}>Meu objetivo como desenvolvedor web é continuar aprimorando minhas habilidades, adquirir o máximo de experiência possível e me tornar um profissional de excelência. Estou sempre disposto a abraçar desafios que envolvam desenvolver ideias a partir do zero.</p>
                     <p className={styles.descricao}>Uma de minhas qualidades pessoais é a tranquilidade sob pressão, o que me permite enfrentar desafios de maneira calma e eficiente. A paixão pela aprendizagem e a determinação em nunca desistir são qualidades que acredito que contribuem para o meu sucesso como desenvolvedor. Além disso, estou sempre aberto a novas ideias e colaborações no mundo da tecnologia, e estou ansioso para o que o futuro reserva.</p>
-                    <p className={styles.descricao}></p>
+
                 </div>
 
             </div>

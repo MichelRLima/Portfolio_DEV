@@ -39,9 +39,13 @@ function PageHeader() {
         };
     }, []);
 
+    const handleDivClick = () => {
+        window.open('https://www.linkedin.com/in/michel-rocha-01b550210/', '_blank');
+    };
+
     return (
         <div className={styles.ContainerHeader}>
-            <div className={styles.containerLogo}></div>
+            <div className={styles.containerLogo} onClick={handleDivClick}></div>
             <div className={styles.containerBar}>
 
                 <ul>

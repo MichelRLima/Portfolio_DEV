@@ -124,6 +124,23 @@
 
 }
 
+.docker {
+    position: absolute;
+    color: #0db7ed;
+    background-color: transparent;
+    width: 2.5em;
+    height: 2.5em;
+    transform: rotate(-13deg);
+    -webkit-transform: rotate(-13deg);
+    /* Para navegadores baseados em WebKit (por exemplo, Chrome e Safari) */
+    -moz-transform: rotate(-13deg);
+    /* Para navegadores Firefox (Mozilla) */
+    left: 80%;
+    top: 12em;
+
+}
+
+
 .js {
     position: absolute;
     color: #f7e025;

@@ -1,17 +1,22 @@
 import React from 'react';
 import styles from './PageBody.module.css'
-import { AiFillHtml5, AiOutlineConsoleSql } from 'react-icons/ai'
-import { SiCss3, SiMongodb, SiJquery, SiSocketdotio, SiPrisma, SiTypescript } from 'react-icons/si'
+import { AiFillHtml5 } from 'react-icons/ai'
+import { SiCss3, SiMongodb, SiJquery, SiSocketdotio, SiPrisma, SiTypescript, SiPostgresql, SiDocker } from 'react-icons/si'
 import { BiLogoJavascript } from 'react-icons/bi'
 import { FaReact, FaNodeJs } from 'react-icons/fa'
-
+import { Tooltip } from 'react-tooltip'
 
 function PageBody() {
 
+
+
+
     return (
         <>
+
+
             <div id="PageBody" className={styles.containerBody}>
-                <h1 className={styles.titulo}>DESENVOLVEDOR WEB</h1>
+                <h1 className={styles.titulo} >DESENVOLVEDOR WEB</h1>
                 <div className={styles.containerDescricao}>
                     <div className={styles.descricao1}>
                         <p>
@@ -26,20 +31,22 @@ function PageBody() {
                 </div>
 
                 <div className={styles.containerPerfil}>
-                    <div className={styles.perfil}></div>
-                    <AiFillHtml5 className={styles.html}></AiFillHtml5>
-                    <SiCss3 className={styles.css}></SiCss3>
-                    <BiLogoJavascript className={styles.js}></BiLogoJavascript>
-                    <FaReact className={styles.react}></FaReact>
-                    <SiPrisma className={styles.prisma}></SiPrisma>
-                    <FaNodeJs className={styles.nodejs}></FaNodeJs>
-                    <SiMongodb className={styles.mongoDB}></SiMongodb>
-                    <div className={styles.git}></div>
-                    <SiJquery className={styles.jquery}></SiJquery>
-                    <div className={styles.aws}></div>
-                    <AiOutlineConsoleSql className={styles.sql}></AiOutlineConsoleSql>
-                    <SiSocketdotio className={styles.socket}></SiSocketdotio>
-                    <SiTypescript className={styles.ts}></SiTypescript>
+                    <div data-tooltip-id="my-tooltip" data-tooltip-content="Michel" className={styles.perfil}></div>
+                    <AiFillHtml5 data-tooltip-id="my-tooltip" data-tooltip-content="HTML" className={styles.html}></AiFillHtml5>
+                    <SiCss3 data-tooltip-id="my-tooltip" data-tooltip-content="CSS" className={styles.css}></SiCss3>
+                    <BiLogoJavascript data-tooltip-id="my-tooltip" data-tooltip-content="JavaScript" className={styles.js}></BiLogoJavascript>
+                    <FaReact data-tooltip-id="my-tooltip" data-tooltip-content="React" className={styles.react}></FaReact>
+                    <SiPrisma data-tooltip-id="my-tooltip" data-tooltip-content="Prisma" className={styles.prisma}></SiPrisma>
+                    <FaNodeJs data-tooltip-id="my-tooltip" data-tooltip-content="Node" className={styles.nodejs}></FaNodeJs>
+                    <SiMongodb data-tooltip-id="my-tooltip" data-tooltip-content="MongoDB" className={styles.mongoDB}></SiMongodb>
+                    <div data-tooltip-id="my-tooltip" data-tooltip-content="Git" className={styles.git}></div>
+                    <SiJquery data-tooltip-id="my-tooltip" data-tooltip-content="Jquery" className={styles.jquery}></SiJquery>
+                    <div data-tooltip-id="my-tooltip" data-tooltip-content="AWS" className={styles.aws}></div>
+                    <SiPostgresql data-tooltip-id="my-tooltip" data-tooltip-content="PostgreSQL" className={styles.sql}></SiPostgresql>
+                    <SiSocketdotio data-tooltip-id="my-tooltip" data-tooltip-content="Socket.io" className={styles.socket}></SiSocketdotio>
+                    <SiTypescript data-tooltip-id="my-tooltip" data-tooltip-content="TypeScript" className={styles.ts}></SiTypescript>
+                    <SiDocker data-tooltip-id="my-tooltip" data-tooltip-content="Docker" className={styles.docker}></SiDocker>
+                    <Tooltip id="my-tooltip" />
 
                 </div>
 
