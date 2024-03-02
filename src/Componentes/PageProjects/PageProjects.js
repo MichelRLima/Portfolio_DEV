@@ -81,14 +81,14 @@ function PageProjects() {
             <Project
                 image={HairTime}
                 titulo={"Projeto HairTime"}
-                descricao={"O HairTime é meu primeiro projeto freelancer. Esse projeto é uma plataforma robusta e elegante, projetada para permitir que os clientes agendem seus serviços de corte de cabelo com facilidade e conveniência. Por meio do framework Express.js e do banco de dados MongoDB, criei uma aplicação que não apenas facilita o agendamento, mas também proporciona atualizações em tempo real sobre disponibilidade e permite a gestão eficiente de horários. Os principais recursos e funcionalidades são o agendamento simplificado para o cliente, através do link apropriado (https://bit.ly/3pT4yhJ), atualizações em tempo real dos agendamentos para evitar conflitos de horários (https://bit.ly/3NMliio) e um painel administrativo eficiente para fazer a alteração de horários disponíveis para agendamento(https://bit.ly/3PZ1Ku8)."}
+                descricao={"O HairTime é meu primeiro projeto freelancer. Esse projeto é uma plataforma robusta e elegante, projetada para permitir que os clientes agendem seus serviços de corte de cabelo com facilidade e conveniência. Por meio do framework Express.js e do banco de dados MongoDB, criei uma aplicação que não apenas facilita o agendamento, mas também proporciona atualizações em tempo real sobre disponibilidade e permite a gestão eficiente de horários. Os principais recursos e funcionalidades são o agendamento simplificado para o cliente, através do link apropriado (https://bit.ly/3V0ON5B), atualizações em tempo real dos agendamentos para evitar conflitos de horários (https://bit.ly/3IFDJn7) e um painel administrativo eficiente para fazer a alteração de horários disponíveis para agendamento (https://bit.ly/3IFDMiN)."}
                 technologies={[
                     <AiFillHtml5 className={styles.html}></AiFillHtml5>,
                     <SiCss3 className={styles.css}></SiCss3>,
                     <FaNodeJs className={styles.nodejs}></FaNodeJs>,
                     <SiMongodb className={styles.mongoDB}></SiMongodb>,
                     <FaAws className={styles.aws}></FaAws>]}
-                linkProjeto={"http://ec2-52-14-95-83.us-east-2.compute.amazonaws.com:3002"}
+                linkProjeto={"https://hair-time.onrender.com"}
                 linkGitHub={"https://github.com/MichelRLima/Projeto-HairTime"}
                 linkSwagger={""}
             ></Project>
@@ -103,7 +103,7 @@ function PageProjects() {
                     <FaNodeJs className={styles.nodejs}></FaNodeJs>,
                     <SiMongodb className={styles.mongoDB}></SiMongodb>,
                     <FaAws className={styles.aws}></FaAws>]}
-                linkProjeto={"http://ec2-52-14-95-83.us-east-2.compute.amazonaws.com:3000"}
+                linkProjeto={"https://portal-de-noticia-t48c.onrender.com"}
                 linkGitHub={"https://github.com/MichelRLima/portal-de-noticia"}
                 linkSwagger={""}
             ></Project>
