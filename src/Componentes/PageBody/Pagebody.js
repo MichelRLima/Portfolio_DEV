@@ -16,11 +16,11 @@ function PageBody() {
 
 
             <div id="PageBody" className={styles.containerBody}>
-                <h1 className={styles.titulo} >DESENVOLVEDOR WEB</h1>
+                <h1 className={styles.titulo} >FULL STACK DEVELOPER</h1>
                 <div className={styles.containerDescricao}>
                     <div className={styles.descricao1}>
                         <p>
-                            Atualmente, sou um estudante de Análise e Desenvolvimento de Sistemas, e estou dedicando meu tempo para aprimorar minhas habilidades, com o objetivo de realizar o sonho de me tornar um desenvolvedor web. Cada dia é uma oportunidade de aprendizado e crescimento nessa jornada.
+                            Atualmente, sou um estudante de Análise e Desenvolvimento de Sistemas, e estou dedicando meu tempo para aprimorar minhas habilidades, com o objetivo de realizar o sonho de me tornar um desenvolvedor. Cada dia é uma oportunidade de aprendizado e crescimento nessa jornada.
                         </p>
                     </div>
                     <div className={styles.descricao2}>
