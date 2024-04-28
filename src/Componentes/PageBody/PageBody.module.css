@@ -189,6 +189,56 @@
 
 }
 
+.nextjs {
+
+    position: absolute;
+    background-color: transparent;
+    width: 3em;
+    height: 3em;
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    /* Para navegadores baseados em WebKit (por exemplo, Chrome e Safari) */
+    -moz-transform: rotate(-15deg);
+    /* Para navegadores Firefox (Mozilla) */
+    left: 40%;
+    top: 1em;
+
+}
+
+.trpc {
+    color: #59b0e2;
+    position: absolute;
+    background-color: transparent;
+    width: 3em;
+    height: 3em;
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    /* Para navegadores baseados em WebKit (por exemplo, Chrome e Safari) */
+    -moz-transform: rotate(-15deg);
+    /* Para navegadores Firefox (Mozilla) */
+    left: 55%;
+    top: 6em;
+
+}
+
+.tailwind {
+    color: #59b0e2;
+    position: absolute;
+    background-color: transparent;
+    width: 3em;
+    height: 3em;
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    /* Para navegadores baseados em WebKit (por exemplo, Chrome e Safari) */
+    -moz-transform: rotate(-15deg);
+    /* Para navegadores Firefox (Mozilla) */
+    left: 20%;
+    top: 2em;
+
+}
+
+
+
 
 .nodejs {
     position: absolute;
@@ -307,6 +357,15 @@
     .js {
         left: 13%;
     }
+
+    .trpc {
+
+        left: 60%;
+        top: 6em;
+
+    }
+
+
 }
 
 @media screen and (max-width:800px) {
@@ -316,6 +375,22 @@
 
 
     }
+
+    .tailwind {
+
+        left: 13%;
+        top: 6em;
+
+    }
+
+    .trpc {
+
+        left: 80%;
+        top: 6em;
+
+    }
+
+
 }
 
 @media screen and (max-width:730px) {
@@ -325,6 +400,8 @@
         top: 14em;
 
     }
+
+
 }
 
 @media screen and (max-width:560px) {
@@ -404,13 +481,23 @@
 
     .jquery {
 
-        left: 19%;
-
+        display: none;
 
     }
 
     .ts {
         top: 5em;
+    }
+
+    .trpc {
+
+        left: 70%;
+        top: 9em;
+
+    }
+
+    .socket {
+        display: none;
     }
 
 
@@ -420,6 +507,23 @@
 
 
     }
+
+    .tailwind {
+
+        left: 5%;
+        top: 6em;
+
+    }
+
+    .nextjs {
+
+
+        left: 20%;
+        top: 7em;
+
+    }
+
+
 
 
 

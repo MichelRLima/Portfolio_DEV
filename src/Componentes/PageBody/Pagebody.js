@@ -1,10 +1,11 @@
 import React from 'react';
 import styles from './PageBody.module.css'
 import { AiFillHtml5 } from 'react-icons/ai'
-import { SiCss3, SiMongodb, SiJquery, SiSocketdotio, SiPrisma, SiTypescript, SiPostgresql, SiDocker } from 'react-icons/si'
+import { SiCss3, SiMongodb, SiJquery, SiSocketdotio, SiPrisma, SiTypescript, SiPostgresql, SiDocker, SiTrpc, SiTailwindcss } from 'react-icons/si'
 import { BiLogoJavascript } from 'react-icons/bi'
 import { FaReact, FaNodeJs } from 'react-icons/fa'
 import { Tooltip } from 'react-tooltip'
+import { TbBrandNextjs } from "react-icons/tb";
 
 function PageBody() {
 
@@ -46,6 +47,9 @@ function PageBody() {
                     <SiSocketdotio data-tooltip-id="my-tooltip" data-tooltip-content="Socket.io" className={styles.socket}></SiSocketdotio>
                     <SiTypescript data-tooltip-id="my-tooltip" data-tooltip-content="TypeScript" className={styles.ts}></SiTypescript>
                     <SiDocker data-tooltip-id="my-tooltip" data-tooltip-content="Docker" className={styles.docker}></SiDocker>
+                    <TbBrandNextjs data-tooltip-id="my-tooltip" data-tooltip-content="Next.js" className={styles.nextjs} />
+                    <SiTrpc data-tooltip-id="my-tooltip" data-tooltip-content="tRPC" className={styles.trpc} />
+                    <SiTailwindcss data-tooltip-id="my-tooltip" data-tooltip-content="Tailwind CSS" className={styles.tailwind} />
                     <Tooltip id="my-tooltip" />
 
                 </div>

@@ -16,10 +16,12 @@ import jogodavelha from '../../imageProjects/jogodavelha.JPG'
 import agencia from '../../imageProjects/agenciabold.JPG'
 import notas from '../../imageProjects/Notas.PNG'
 import ControleEstoque from '../../imageProjects/ControleEstoque.PNG'
+import appnotas from '../../imageProjects/appnotas.PNG'
 import HairTime from '../../imageProjects/hairtime.JPG'
 import desafioBimestre from '../../imageProjects/desafioBimestre.PNG'
 import { FaReact, FaNodeJs, FaAws, FaBootstrap } from 'react-icons/fa'
-import { SiCss3, SiMongodb, SiSocketdotio, SiJavascript, SiPrisma, SiSwagger, SiPostgresql, SiTypescript } from 'react-icons/si'
+import { TbBrandNextjs } from "react-icons/tb";
+import { SiCss3, SiMongodb, SiSocketdotio, SiJavascript, SiPrisma, SiSwagger, SiPostgresql, SiTypescript, SiTailwindcss, SiSqlite, SiTrpc } from 'react-icons/si'
 import { AiFillHtml5 } from 'react-icons/ai'
 
 function PageProjects() {
@@ -28,6 +30,25 @@ function PageProjects() {
     return (
         <div id="projects" className={styles.PageProjects}>
             <h1 className={styles.tituloProjects}>Meus projetos</h1>
+
+            <Project
+                image={appnotas}
+                titulo={"App Notas"}
+                descricao={"O projeto Notas é um sistema de notas simples desenvolvido como parte de um teste técnico para a vaga de desenvolvedor fullstack na empresa Quarto à Vista. O objetivo principal do projeto é criar um sistema de notas que permita aos usuários adicionar, editar e excluir notas com títulos e descrições."}
+                technologies={[
+                    <FaReact className={styles.react}></FaReact>,
+                    <SiTypescript className={styles.css}></SiTypescript  >,
+                    <TbBrandNextjs className={styles.aws} />,
+                    <SiTrpc className={styles.sqlite} />,
+                    <SiSqlite className={styles.sqlite} />,
+                    <SiPrisma className={styles.aws}></SiPrisma >,
+                    <SiTailwindcss className={styles.tailwind} />,
+
+                ]}
+                linkProjeto={"https://desafio-qavi.vercel.app/"}
+                linkGitHub={"https://github.com/MichelRLima/AppNotas-TesteQavi"}
+                linkSwagger={""}
+            ></Project>
 
 
             <Project

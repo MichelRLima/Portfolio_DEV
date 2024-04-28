@@ -115,6 +115,22 @@
 
 }
 
+.sqlite {
+
+    color: #59b0e2;
+    background-color: transparent;
+    width: 2em;
+    height: 2em;
+}
+
+.tailwind {
+
+    color: #3ebff8;
+    background-color: transparent;
+    width: 2em;
+    height: 2em;
+}
+
 
 
 
