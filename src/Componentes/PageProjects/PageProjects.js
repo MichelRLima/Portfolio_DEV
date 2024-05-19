@@ -19,6 +19,7 @@ import ControleEstoque from '../../imageProjects/ControleEstoque.PNG'
 import appnotas from '../../imageProjects/appnotas.PNG'
 import HairTime from '../../imageProjects/hairtime.JPG'
 import desafioBimestre from '../../imageProjects/desafioBimestre.PNG'
+import b2bit from '../../imageProjects/b2bit.PNG'
 import { FaReact, FaNodeJs, FaAws, FaBootstrap } from 'react-icons/fa'
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiCss3, SiMongodb, SiSocketdotio, SiJavascript, SiPrisma, SiSwagger, SiPostgresql, SiTypescript, SiTailwindcss, SiSqlite, SiTrpc } from 'react-icons/si'
@@ -65,6 +66,20 @@ function PageProjects() {
                 linkProjeto={""}
                 linkGitHub={"https://github.com/MichelRLima/API-Controle-de-Estoque"}
                 linkSwagger={"https://api-controle-estoque.onrender.com/api-docs/"}
+            ></Project>
+
+            <Project
+                image={b2bit}
+                titulo={"B2bit "}
+                descricao={"O projeto B2BIT foi desenvolvido como parte de um desafio técnico com o objetivo de criar uma página front-end utilizando React e TypeScript. A principal funcionalidade do B2BIT é permitir que os usuários façam login na plataforma utilizando um nome de usuário e uma senha. Este login é autenticado através do consumo de uma API específica fornecida no teste."}
+                technologies={[
+                    <FaReact className={styles.react}></FaReact>,
+                    <SiTypescript className={styles.css}></SiTypescript  >,
+                    <SiTailwindcss className={styles.tailwind} />,
+                ]}
+                linkProjeto={"https://b2bit.netlify.app/"}
+                linkGitHub={"https://github.com/MichelRLima/Desafio-b2bit"}
+                linkSwagger={""}
             ></Project>
 
             <Project

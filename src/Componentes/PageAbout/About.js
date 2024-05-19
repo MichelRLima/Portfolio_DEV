@@ -64,7 +64,7 @@ function About() {
                 </div>
 
             </div>
-            <h4>Alguns certificados</h4>
+
             <AliceCarousel
                 autoPlay
                 autoPlayStrategy="none"
