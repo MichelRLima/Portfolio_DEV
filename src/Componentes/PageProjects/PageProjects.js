@@ -20,6 +20,7 @@ import appnotas from '../../imageProjects/appnotas.PNG'
 import HairTime from '../../imageProjects/hairtime.JPG'
 import desafioBimestre from '../../imageProjects/desafioBimestre.PNG'
 import b2bit from '../../imageProjects/b2bit.PNG'
+import cactus from '../../imageProjects/cactus.PNG'
 import { FaReact, FaNodeJs, FaAws, FaBootstrap } from 'react-icons/fa'
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiCss3, SiMongodb, SiSocketdotio, SiJavascript, SiPrisma, SiSwagger, SiPostgresql, SiTypescript, SiTailwindcss, SiSqlite, SiTrpc } from 'react-icons/si'
@@ -31,6 +32,23 @@ function PageProjects() {
     return (
         <div id="projects" className={styles.PageProjects}>
             <h1 className={styles.tituloProjects}>Meus projetos</h1>
+
+            <Project
+                image={cactus}
+                titulo={"Painel de monitoramento"}
+                descricao={"Este painel de monitoramento foi desenvolvido como parte de um desafio técnico na empresa Cactus Soft para a vaga de estágio em desenvolvimento Fullstack. O objetivo do projeto era criar uma plataforma e uma API capazes de manipular dados de um banco de dados predefinido, permitindo a criação de dashboards e filtros para a visualização de dados dos clientes. A solução foi concebida para mostrar informações relacionadas ao status de internet dos clientes, incluindo a verificação do status da rede, status do cadastro, e dados sobre o plano de internet, como tipo de plano, valor, concentrador, e conexões inicial e final."}
+                technologies={[
+                    <FaReact className={styles.react}></FaReact>,
+                    <FaNodeJs className={styles.nodejs}></FaNodeJs>,
+                    <SiPrisma className={styles.aws}></SiPrisma >,
+                    <SiPostgresql className={styles.css}></SiPostgresql >,
+
+
+                ]}
+                linkProjeto={"https://desafio-cactus-soft.netlify.app/"}
+                linkGitHub={"https://github.com/MichelRLima/Desafio-Cactus-Soft"}
+                linkSwagger={""}
+            ></Project>
 
             <Project
                 image={appnotas}
